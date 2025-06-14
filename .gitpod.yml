@@ -1,0 +1,11 @@
+image: gitpod/openjdk
+tasks:
+  - init: flutter pub get
+    command: flutter analyze
+ports:
+  - port: 3000
+    onOpen: open-preview
+vscode:
+  extensions:
+    - zhuangtongfa.Material-theme
+    - MS-azuretools.vscode-bicep
